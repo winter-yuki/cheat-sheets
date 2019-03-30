@@ -5,117 +5,16 @@
 %\includeonly{chapters/ch2,chapters/ch3}
 
 \begin{document}
+    
+\input{trigonometry}
 
+\input{hyperbolic}
 
-\begin{tabular}{l|l|l}
-    \multicolumn{3}{c}{Тригонометрические функции} \\
-    \hline
-    
-    $\displaystyle sin^2(x) + cos^2(x) = 1$  & 
-    $\displaystyle tg^2(x) + 1 = \frac{1}{cos^2(x)}$ &
-    $\displaystyle tg(x) = \frac{sin(x)}{cos(x)}$ \\
-    
-    $\displaystyle tg(x)ctg(x) = 1$ &
-    $\displaystyle ctg^2(x) + 1 = \frac{1}{sin^2(x)}$ &
-    $\displaystyle ctg(x) = \frac{cos(x)}{x}$ \\  
-    \hline
-    
-    $\displaystyle sin(x \pm y) = sin(x)cos(y) \pm cos(x)sin(y)$ & 
-    $\displaystyle sin(x) = \frac{2tg\left(\frac{x}{2}\right)}{1 + tg^2\left(\frac{x}{2}\right)}$ &
-    $\displaystyle sin(2x) = 2sin(x)cos(x)$ \\
-    
-    $\displaystyle cos(x \pm y) = cos(x)cos(y) \mp sin(x)sin(y)$ & 
-    $\displaystyle cos(x) = \frac{1 - tg^2\left(\frac{x}{2}\right)}{1 + tg^2\left(\frac{x}{2}\right)}$ &
-    $\displaystyle cos(2x) = cos^2(x) - sin^2(x)$ \\
-    
-    $\displaystyle tg(x \pm y) = \frac{tg(x) \pm tg(y)}{1 \mp tg(x)tg(y)}$ & 
-    $\displaystyle tg(x) = \frac{2tg\left(\frac{x}{2}\right)}{1 - tg^2\left(\frac{x}{2}\right)}$ &
-    $\displaystyle tg(2x) = \frac{2tg(x)}{1-tg^2(x)}$ \\
-    
-    $\displaystyle ctg(x \pm y) = \frac{-1 \pm ctg(x)ctg(y)}{ctg(x) \pm ctg(y)}$ & 
-    $\displaystyle ctg(x) = \frac{1 - tg^2\left(\frac{x}{2}\right)}{2tg\left(\frac{x}{2}\right)}$ &
-    $\displaystyle ctg(2x) = \frac{ctg^2(x) - 1}{2ctg(x)}$ \\
-    \hline
-    
-    $\displaystyle sin(x) \pm sin(y) = 2sin\left(\frac{x \pm  y}{2}\right)cos\left(\frac{x \pm y}{2}\right)$ &
-    $\displaystyle sin\left(\frac{x}{2}\right) = \sqrt{\frac{1 - cos(x)}{2}}$ &
-    $\displaystyle sin^2(x) = \frac{1 - cos(2x)}{2}$ \\ 
-    
-    $\displaystyle cos(x) + cos(y) = 2cos\left(\frac{x +  y}{2}\right)cos\left(\frac{x - y}{2}\right)$ &
-    $\displaystyle cos\left(\frac{x}{2}\right) = \sqrt{\frac{1 + cos(x)}{2}}$ &
-    $\displaystyle cos^2(x) = \frac{1 + cos(2x)}{2}$ \\  
-    
-    $\displaystyle sin(x) \pm sin(y) = 2sin\left(\frac{x \pm  y}{2}\right)cos\left(\frac{x \pm y}{2}\right)$ &
-    $\displaystyle tg\left(\frac{x}{2}\right) = \sqrt{\frac{1 - cos(x)}{1 + cos(x)}}$ &
-    $\displaystyle (sin(x) + cos(x))^2 = 1 + sin(2x)$ \\  
-    \hline
-    
-    $\displaystyle sin(x)sin(y) = \frac{1}{2}(cos(x - y) - cos(x + y))$ &
-    $\displaystyle $ &
-    $\displaystyle $ \\  
-    
-    $\displaystyle cos(x)cos(y) = \frac{1}{2}(cos(x - y) + cos(x + y))$ &
-    $\displaystyle $ &
-    $\displaystyle $ \\  
-    
-    $\displaystyle sin(x)cos(y) = \frac{1}{2}(sin(x - y) + sin(x + y))$ &
-    $\displaystyle $ &
-    $\displaystyle $ \\  
-    \hline
-    
-    \multicolumn{3}{c}{Гиперболические функции} \\
-    \hline
-    
-    $\displaystyle \operatorname{sh}x=\frac{e^x-e^{-x}}{2}$ &
-    $\displaystyle \operatorname{sh}(x \pm y)=\operatorname{sh}x\,\operatorname{ch}y \pm \operatorname{sh}y\,\operatorname{ch}x.$ &
-    $\displaystyle \operatorname{ch}^2\frac{x}{2} = \frac{\operatorname{ch} x + 1}{2}.$ \\  
-    
-    $\displaystyle \operatorname{ch}x=\frac{e^x+e^{-x}}{2}$ &
-    $\displaystyle \operatorname{ch}(x \pm y)=\operatorname{ch}x\,\operatorname{ch}y \pm \operatorname{sh}y\,\operatorname{sh}x.$ &
-    $\displaystyle \operatorname{sh}^2\frac{x}{2} = \frac{\operatorname{ch} x - 1}{2}.$ \\  
-    
-    $\displaystyle \operatorname{ch}^2t-\operatorname{sh}^2t=1$ &
-    $\displaystyle \operatorname{th}(x \pm y)=\frac{\operatorname{th}x \pm \operatorname{th}y}{1 \pm \operatorname{th}x\,\operatorname{th}y}.$ &
-    $\displaystyle $ \\  
-    
-    $\displaystyle $ &
-    $\displaystyle \operatorname{cth}(x \pm y)=\frac{ 1 \pm \operatorname{cth}x\,\operatorname{cth}y}{\operatorname{cth}x \pm \operatorname{cth}y}.$ &
-    $\displaystyle $ \\  
-    \hline
-    
-%    $\displaystyle $ &
-%    $\displaystyle $ &
-%    $\displaystyle $ \\  
-%    
-%    $\displaystyle $ &
-%    $\displaystyle $ &
-%    $\displaystyle $ \\  
-%    
-%    $\displaystyle $ &
-%    $\displaystyle $ &
-%    $\displaystyle $ \\  
-%    
-%    $\displaystyle $ &
-%    $\displaystyle $ &
-%    $\displaystyle $ \\    
-\end{tabular}
+\input{lims}
 
-\vspace{2ex}
-При $x \to 0$
-\begin{equation}
-    \begin{aligned}
-        &sin(x) \approx x \\
-        &tg(x) \approx x \\
-        &ln(1+x) \approx x \\
-        &a^x - 1 \approx xln(a) \\
-        &e^x - 1 \approx x \\
-        &(1 + x)^\alpha - 1 \approx \alpha x \\
-        &arcsin(x) \approx x \\
-        &arctg(x) \approx x \\
-    \end{aligned}
-\end{equation}
+\input{der}
 
-
+\input{integrals}
 
 \end{document} % конец документа
 

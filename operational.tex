@@ -1,0 +1,72 @@
+\textbf{Operational calculus} $\displaystyle F(p) = \int_o^\infty f(t)e^{-pt}dt$
+
+\begin{tabular}{l|l|l}
+    \multicolumn{3}{c}{Свойства} \\
+    $\displaystyle \alpha f + \beta g \rightarrow \alpha F(p) + \beta g(p)$ & 
+    $\displaystyle \int_0^t f(\tau)d\tau \rightarrow \frac{F(p)}{p}$ &
+    $\displaystyle f(t)e^{\alpha t} \rightarrow F(p-\alpha)$ \\ 
+    $\displaystyle f(\alpha t) \rightarrow \frac{1}{\alpha}F\left(\frac{p}{\alpha}\right)$ &
+    $\displaystyle f'(t) \rightarrow pF(p) - f(0)$ & 
+    $\displaystyle f(t-\tau) \rightarrow e^{-\tau p} F(p)$ \\
+    $\displaystyle -tf(t) \rightarrow F'(p)$ & 
+    $\displaystyle \frac{f(t)}{t} \rightarrow \int_p^\infty F(z)dz$ &
+    $\displaystyle \int_0^t f(\tau)\phi(t-\tau)d\tau \rightarrow F(p)\Phi(p)$ \\
+    \multicolumn{2}{l}{$\displaystyle f_1(t)f_2(0) + \int_0^t f_1(\tau)f_2'(t-\tau)d\tau \rightarrow pF_1(p)F_2(p)$} &
+    $(-1)^nt^nf(t) \rightarrow F^{(n)}(p)$ \\
+    \multicolumn{3}{l}{$f^{(n)}(t) \rightarrow p^nF(p)-p^{n-1}f(0)-p^{n-2}f'(0)-\ldots-pf^{(n-2)}(0)-f^{(n-1)}(0)$} \\
+    \hline
+\end{tabular} \\
+
+
+\begin{tabular}{l|l|l|l}
+   \multicolumn{4}{c}{Правила} \\
+    $\displaystyle \chi(t) \rightarrow \frac{1}{p}$ &
+    $\displaystyle e^{-\alpha t} \rightarrow \frac{1}{p+\alpha}$ &
+    $\displaystyle \sinh{\alpha t} \rightarrow \frac{\alpha}{p^2-\alpha^2}$ &
+    $\displaystyle t\sin{\alpha t} \rightarrow \frac{2p\alpha}{(p^2+\alpha^2)^2}$ \\
+    
+    $\displaystyle t \rightarrow \frac{1}{p^2}$ &
+    $\displaystyle \sin{\alpha t} \rightarrow \frac{\alpha}{p^2+\alpha^2}$ &
+    $\displaystyle \cosh{\alpha t} \rightarrow \frac{p}{p^2-\alpha^2}$ &
+    $\displaystyle t\cos{\alpha t} \rightarrow \frac{p^2-\alpha^2}{(p^2+\alpha^2)^2}$ \\
+    
+    $\displaystyle t^n \rightarrow \frac{n!}{p^{n+1}}$ &
+    $\displaystyle \cos{\alpha t} \rightarrow \frac{p}{p^2 + \alpha^2}$ &
+    $\displaystyle e^{-\alpha t}\sin{\beta t} \rightarrow\frac{\beta}{(p+\alpha)^2+\beta^2}$ &
+    $\displaystyle \delta(t) \rightarrow 1$ \\
+    
+    $\displaystyle t^\sigma\rightarrow\frac{\Gamma(\sigma+1)}{p^{\sigma + 1}}, \sigma > -1$ &
+    $\displaystyle t^ne^{-\alpha t} \rightarrow \frac{n!}{(p+\alpha)^{n+1}}$ &
+    $\displaystyle e^{-\alpha t}\cos{\beta t} \rightarrow\frac{p+\alpha}{(p+\alpha)^2+\beta^2}$ &
+    $\displaystyle $ \\
+    
+    \multicolumn{2}{l}{$\displaystyle \frac{1}{3\alpha^3}(\sin{\alpha t} - \alpha t\cos{\alpha t})\rightarrow\frac{1}{(p^2+\alpha^2)^2}$} &
+    \multicolumn{2}{l}{$\displaystyle F(p) = \frac{1}{1-e^{-pT}}F_0(p)$} \\
+    \hline
+\end{tabular} \\
+
+
+\begin{tabular}{l|l}
+    \multicolumn{2}{c}{Обратное преобразование} \\
+    $\displaystyle \frac{A}{p-\alpha} \leftarrow Ae^{\alpha t}$ &
+    $\displaystyle \frac{Mp+N}{(p-\gamma)^2+\beta^2}\leftarrow Me^{\gamma t}\cos{\beta t} + \frac{M\gamma + N}{\beta}e^{\gamma t}\sin{\beta t}$ \\
+    
+    $\displaystyle \frac{A}{(p-\alpha)^{k+1}}\leftarrow\frac{At^k}{k!}e^{\alpha t}$ &
+    $\displaystyle \frac{-2\beta(p-\gamma)}{[(p-\gamma)^2+\beta^2]^2} \leftarrow te^{\gamma t}\sin{\beta t}$ \\
+    \hline
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

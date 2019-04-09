@@ -1,0 +1,78 @@
+\textbf{Методы интегрирования:}\\
+\begin{tabular}{l}
+	\begin{tabular}{|l|l|l|}
+		 	\multicolumn{3}{c}{Универсальная тригонометрическая подстановка:} \\
+		 	\hline
+	 		$\displaystyle \sin x  = \frac{2t}{1 + t^2} $ &
+		 	$\displaystyle \cos x  = \frac{1 - t^2}{1 + t^2} $ &
+		 	$\displaystyle dx  = \frac{2 \, dt}{1 + t^2} $ \\
+		 	\hline
+	\end{tabular}
+	\begin{tabular}{|l|l|l|}
+		\multicolumn{2}{c}{Подстановки Чебышёва $\displaystyle \int x^m (a+bx^n)^{\frac{p}{q}} dx$ :} \\
+		\hline
+		$\displaystyle \frac{p}{q} $ - целое & 
+		$\displaystyle x = t^k $, где k - общ. знам. n и m \\
+		\hline
+		$\displaystyle \frac{m + 1}{n} $ - целое & 
+		$\displaystyle a+bx^n = t^q $ \\
+		\hline
+		$\displaystyle \frac{p}{q} + \frac{m + 1}{n} $ - целое & 
+		$\displaystyle ax^{-n} + b = t^q $ \\
+		\hline	
+	\end{tabular}
+	\\
+	\begin{tabular}{|l|l|l|l|}
+		\multicolumn{2}{c}{Подстановки Эйлера $\displaystyle \int R(x,\sqrt{ax^2+bx+c}) dx$ :} \\
+		\hline
+		a > 0 &
+		$\displaystyle \sqrt{ax^2+bx+c} = t - x\sqrt{a}$ &
+		$\displaystyle x = \frac{t^2 - c}{b + 2t\sqrt{a}}$ &
+		$\displaystyle dx = \frac{2t(b + 2t\sqrt{a}) - 2 \sqrt{a}(t^2 - c)}{(b + 2t\sqrt{a})^2}dt$ \\
+		\hline
+		a < 0 & 
+		$\displaystyle \sqrt{ax^2+bx+c} = (x - x_{1})t;x_{1},x_{2}-roots(exist)$  &
+		$\displaystyle x = \frac{x_{1}t^2 - ax_{2}}{t^2 - a}$ &
+		$\displaystyle dx = \frac{2x_{1}t(t^2 - a) - 2 t(x_{1}t^2 - ax_{2})}{(t^2 - a)^2}dt$ \\
+		\hline
+	\end{tabular}
+	\\
+	\begin{tabular}{|l|}
+		\multicolumn{1}{c}{Пример метода Остроградского:} \\
+		\hline
+		$\displaystyle \int \frac{x dx}{(x-1)^2(x+1)^3} = \frac{ax^2+bx+c}{(x-1)(x+1)^2} + \int \frac{mx + n}{(x-1)(x+1)}dx$ \\
+		степени мн-нов с неизв. коэф на 1 меньше степ. знаменателей \\ дифференцируем левую и правую части: \\
+		$\displaystyle \frac{x}{(x-1)^2(x+1)^3}=\left(\frac{ax^2+bx+c}{(x-1)(x+1)^2}\right)'+\frac{mx + n}{(x-1)(x+1)}$ \\
+		далее метод неопределенных коэф-ов \\
+		\hline	
+	\end{tabular}
+	\begin{tabular}{|l|l|}
+		\multicolumn{2}{c}{Тригон./гиперб. подстановки} \\
+		\hline
+		$\displaystyle \int R(x, \sqrt{a^2-x^2})dx$ &
+		$\displaystyle x = a sin t $ \\
+		\hline
+		$\displaystyle \int R(x, \sqrt{a^2+x^2})dx$ &
+		$\displaystyle x = a sh t $ \\
+		\hline
+		$\displaystyle \int R(x, \sqrt{x^2-a^2})dx$ &
+		$\displaystyle x = a ch t $ \\
+		\hline
+	\end{tabular}
+	\\
+	\begin{tabular}{|l|l|l|}
+		\multicolumn{3}{c}{Тригонометрические подстановки $\displaystyle \int f(sin x, cos x)dx$} \\
+		\hline
+		$\displaystyle f(sin x, -cos x) = -f(sin x, cos x)$ &
+		$\displaystyle f(-sin x, cos x) = -f(sin x, cos x)$ &
+		$\displaystyle f(-sin x, -cos x) = f(sin x, cos x)$ \\
+		\hline
+		$\displaystyle sin x = t$ &
+		$\displaystyle cos x = t$ &
+		$\displaystyle tg x = t$ \\
+		\hline
+	\end{tabular}
+	\\
+\end{tabular}
+
+

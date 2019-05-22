@@ -1,0 +1,63 @@
+
+\begin{tabular}{c|c|c|c}
+	\multicolumn{4}{c}{Поля} \\
+	\hline
+$\displaystyle \vec{F} = \left(\begin{matrix}
+P \\ Q \\ R
+\end{matrix}\right)$ &
+
+$\displaystyle \operatorname{grad} f = \left(
+\begin{matrix}
+\cfrac{\partial f}{\partial x} \\ \cfrac{\partial f}{\partial y} \\
+\cfrac{\partial f}{\partial z}
+\end{matrix}
+\right)$
+
+&
+
+$\displaystyle \operatorname{rot} \vec{F} =
+\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+\cfrac{\partial}{\partial x} & \cfrac{\partial}{\partial y} &
+\cfrac{\partial}{\partial z} \\
+P & Q & R
+\end{vmatrix}
+$
+&
+$\displaystyle \operatorname{div}\vec{F} = \cfrac{\partial P}{\partial x} + \cfrac{\partial Q}{\partial y} +
+\cfrac{\partial R}{\partial z}$ \\
+\hline
+
+\multicolumn{4}{c}{Формула Гаусса-Остроградского: $\displaystyle\iint_S \vec{F}\vec{dS} = \iiint_V \operatorname{div}\vec{F}dxdydz$} \\
+
+
+\multicolumn{4}{c}{Формула Стокса: $\displaystyle \int_L Pdx + Qdy + Rdz = \iint_S \operatorname{rot}\vec{F} \vec{dS}$} \\
+
+\multicolumn{4}{c}{Формула Грина: $\displaystyle \iint_G \left(\cfrac{\partial Q}{\partial x} - \cfrac{\partial P}{\partial y}\right)dxdy = 
+	\int_L Pdx+Qdy$} \\
+
+\multicolumn{4}{c}{Формула площади (Грина): $
+	S = \int_L xdy
+	$} \\
+
+\hline 
+\multicolumn{4}{c}{Потенциал поля: $\displaystyle
+	U(x,y,z) = \int_{x_0, y_0, z_0}^{x,y,z} Pdx+Qdy+Rdz =
+	\int_{x_0}^{x} P(x,y,z)dx + \int_{y_0}^{y}Q(x_0,y,z)dy +
+	\int_{z_0}^{z} R(x_0,y_0,z)dz
+	$}\\
+
+\multicolumn{4}{c}{Векторные линии: $
+	\cfrac{dx}{P} = \cfrac{dy}{Q} = \cfrac{dz}{R}
+	$}
+\\
+
+$\displaystyle f\cdot g = f\operatorname{grad}g + g\operatorname{grad}f$ & 
+$\displaystyle \operatorname{div}\phi \vec{F} = \operatorname{\phi}\cdot \vec{F} + \phi \operatorname{div}\vec{F}$
+& \multicolumn{2}{c}{$\displaystyle \operatorname{rot}\phi \vec{F} =
+\operatorname{grad}\phi \times \vec{F} + \phi \operatorname{rot} \vec{F}$}
+\\
+\multicolumn{4}{c}{
+$\displaystyle \operatorname{div}(\vec{F}\times\vec{G}) = \vec{G} \operatorname{rot}\vec{F} - \vec{F}\operatorname{rot}\vec{G}$}\\
+\hline
+\end{tabular} 

@@ -1,0 +1,102 @@
+\begin{center}
+	\textbf{Дифференциальные уравнения 1-ого порядка}
+\end{center}
+
+\begin{itemize}
+	\item{\large Разрешенные относительно производной: $y' = f(x, y)$}
+	
+	\setlength{\extrarowheight}{1mm}
+	\begin{tabular}{l}
+		
+		\begin{tabular}{|l|}
+			\hline
+			\textbf{С разделяющимися переменными:} \\
+			$\displaystyle y' = f(x) g(y) $ \\
+			$\displaystyle M(x)N(y)dx + P(x)Q(y)dy = 0$; \\
+			\textbf{Решение:} $\displaystyle  \frac{-dy}{M(x)N(y)} = \frac{dx}{P(x)Q(y)}$ \\
+			\hline
+			Могут быть потеряны решения при делении \\
+			\hline
+		\end{tabular}
+		\begin{tabular}{|l|}
+			\hline
+			\textbf{Однородные степени p:} \\
+			ф-ия $u = f(x,y)$ наз. \textit{однородной степени p}, если \\ 
+			$f(tx,ty) = t^p f(x,y)$; \\
+			$\displaystyle M(x, y)dx + N(x, y)dy = 0$ - однородное ур-ние, если \\ 
+			M и N однородные ф-ии; \\
+			\textbf{Решение:} \textit{замена} $y = tx$, где $t = t(x)$ \\
+			$dy = tdx + xdt$ \\	
+			\hline
+		\end{tabular}
+		\\
+		\\
+		\begin{tabular}{|l|}
+			\hline
+			\textbf{Простейшие, привод. к однородному:} \\
+			I. $\displaystyle \frac{dy}{dx} = 
+			f\left( \frac{a_1x + b_1y + c_1}{a_2x + b_2y + c_2} \right), 
+			c_1^2 + c_2^2 \neq 0$ \\
+			\textbf{Решение:} \\
+			1)$\begin{vmatrix}
+				a_1 & b_1 \\
+				a_2 & b_2 
+			\end{vmatrix} \neq 0  
+			\Rightarrow 
+			\begin{cases} 
+				x = \xi + \alpha \\
+				y = \eta + \beta 
+			\end{cases}$ \\
+			$\displaystyle \frac{d\eta}{d\xi} = 
+			f\left( \frac{a_1\xi + b_1\eta + a_1\alpha + b_1\beta + c_1}
+						 {a_2\xi + b_2\eta + a_2\alpha + b_2\beta + c_2} 
+		 	\right)$ \\
+			$\begin{cases} 
+				a_1\alpha + b_1\beta + c_1 = 0 \\
+				a_2\alpha + b_2\beta + c_2 = 0 
+			\end{cases} 
+			\Rightarrow
+			find~\alpha, \beta$ \\
+			2)$\begin{vmatrix}
+				a_1 & b_1 \\
+				a_2 & b_2 
+			\end{vmatrix} = 0  
+			\Rightarrow$ \textit{замена:} $z = a_2x + b_2y$ \\\\
+			II. замена $y = z^k$ (k находят из условия \\
+			однородности уравнения после подстановки) \\
+			\hline		
+		\end{tabular}
+		\begin{tabular}{|l|}
+			\hline
+			\textbf{Линейные первого порядка:} \\
+			I. \textit{Линейное однородное}: $y' + a(x)y = b(x)$ \\
+			\textbf{Решение:} \\
+			1) ищем в виде $y = u(x) \cdot v(x)$ \\
+			2) решаем $u' + a(x)u = 0$, находим $u(x)$ (без +Сonst) \\
+			3) решаем $v'\cdot u(x) = b(x)$, находим $v(x)$ (+Const) \\
+			4) умножаем $u(x)$ на $v(x)$ \\
+			5) \textbf{NB}: при $\forall$ делении возвожна потеря решения! \\
+			6) иногда возможно поменять $y$ и $x$: $x = u(y) \cdot v(y)$ \\\\
+			
+			II. \textit{Бернулли}: $y' + a(x)y = b(x)y^n\qquad(n \neq 1)$ \\
+			\textbf{Решение:} \\
+			1) делим ур-ние на $y^n$ \qquad 2) замена $\frac{1}{y^{n-1}}=z$ \\
+			3) свели к задаче выше \\\\
+			
+			III. \textit{Риккати}: $y' + a(x)y + b(x)y^2=c(x)$ \\
+			\textbf{Решение:} \\
+			1) замена: $y = \tilde{y}(x) + z$, где $\tilde{y}(x)$ - частное решение \\
+			2)для $y' + 2y^2=\frac{6}{x^2}$ ищем что-то	в виде $y = \frac{a}{x}$ \\
+			3)для $y' = y^2 = x^2 - 2x$ ищем что-то в виде $y=ax + b$ \\	
+			\hline	
+		\end{tabular}
+		\\
+		//TO DO : 1)в полных диф. 2)инт. множ. 3) Дарбу
+	\end{tabular}
+
+	\item {\large Не разрешенные относительно производной: $F(x,y,y') = 0$}
+
+	todo
+
+\end{itemize}
+\setlength{\extrarowheight}{0mm}

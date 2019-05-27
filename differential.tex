@@ -24,7 +24,7 @@
 			ф-ия $u = f(x,y)$ наз. \textit{однородной степени p}, если \\ 
 			$f(tx,ty) = t^p f(x,y)$; \\
 			$\displaystyle M(x, y)dx + N(x, y)dy = 0$ - однородное ур-ние, если \\ 
-			M и N однородные ф-ии; \\
+			M и N однородные ф-ии одной степени; \\
 			\textbf{Решение:} \textit{замена} $y = tx$, где $t = t(x)$ \\
 			$dy = tdx + xdt$ \\	
 			\hline
@@ -74,9 +74,8 @@
 			1) ищем в виде $y = u(x) \cdot v(x)$ \\
 			2) решаем $u' + a(x)u = 0$, находим $u(x)$ (без +Сonst) \\
 			3) решаем $v'\cdot u(x) = b(x)$, находим $v(x)$ (+Const) \\
-			4) умножаем $u(x)$ на $v(x)$ \\
-			5) \textbf{NB}: при $\forall$ делении возвожна потеря решения! \\
-			6) иногда возможно поменять $y$ и $x$: $x = u(y) \cdot v(y)$ \\\\
+			4) \textbf{NB}: при $\forall$ делении возвожна потеря решения! \\
+			5) иногда возможно поменять $y$ и $x$: $x = u(y) \cdot v(y)$ \\\\
 			
 			II. \textit{Бернулли}: $y' + a(x)y = b(x)y^n\qquad(n \neq 1)$ \\
 			\textbf{Решение:} \\
@@ -91,7 +90,45 @@
 			\hline	
 		\end{tabular}
 		\\
-		//TO DO : 1)в полных диф. 2)инт. множ. 3) Дарбу
+		//TO DO : 1)в полных диф. (есть еще +1 метод с фиксир. точкой) 2)инт. множ. 3) Дарбу \\
+		\begin{tabular}{|l|}
+			\hline
+			\textbf{Уравнение в полных дифференциалах:} \\
+			$\displaystyle M(x, y)dx + N(x, y)dy = 0$ наз. \\ 
+			\textit{в полных дифференциалах}, если \\
+			$\displaystyle\frac{\partial M}{\partial y} \equiv \frac{\partial N}{\partial x}$ \\
+			\textbf{Решение:} \\
+			1) Вид общего решения: $F(x,y) = C$ \\
+			2) $F = \int M(x,y)dx = M_{primitive}(x,y) + \phi(y)$ \\
+			3) $( M_{primitive}(x,y) + \phi(y) )_{y}' = N(x,y)$; \\ 
+			находим $\phi(y)$ \\
+			4) ответ: $M_{primitive}(x,y) + \phi(y) = C$ \\
+			\hline
+		\end{tabular}
+		\begin{tabular}{|l|}
+			\hline
+			\textbf{Интегрирующий меожитель $\mu$}: \\
+			ф-ия $\mu(x,y) \neq 0$, после умножения на кот. ур-ние \\
+			$M(x, y)dx + N(x, y)dy = 0$ превращается в ур-ние \\
+			\textit{в полных диф-лах}. \\
+			\textbf{Решение:} \\
+			1) Возможно, он легко в уме подберется(нет) \\
+			2) пусть $\omega = \omega(x,y)$ и $ \mu = \mu(\omega)$; тогда:  \\
+			$\frac{\mu(\omega)'}{\mu(\omega)} = 
+			\frac{\frac{\partial N}{\partial x} - 
+				  \frac{\partial M}{\partial y}}
+			{\frac{\partial \omega}{\partial y}M(x,y) - 
+			 \frac{\partial \omega}{\partial x}N(x,y)}$ \\
+		 3) цель: \textit{подобрать} такую ф-ию $\omega(x, y)$, чтобы \\
+		 выражение справа представилось некой ф-ией $g(\omega)$; \\ 
+		 тогда сможем найти $\mu(\omega) = \mu(x,y)$, решив диффуру \\
+		 4) возможные варианты $\omega(x,y)$: \\ 
+		 $\omega = \pm x$ \qquad $\omega = \pm y$ \qquad $\omega = \pm xy$ \\ 
+		 $\omega = x \pm y$ \qquad $\omega = \pm \frac{x}{y}$ \qquad $\omega = \pm \frac{y}{x}$ \\
+			
+			\hline
+		\end{tabular}
+			
 	\end{tabular}
 
 	\item {\large Не разрешенные относительно производной: $F(x,y,y') = 0$}

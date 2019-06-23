@@ -2,29 +2,33 @@
     \textbf{Другие интегралы}
 \end{center}
 
-Формула Грина: $\displaystyle\oint\limits_{(K)}P(x, y)dx + Q(x, y)dy = \iint\limits_{(D)}\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)dxdy$
+\textit{Поверхностный интеграл первого рода}
 
-Площадь: $S = \frac{1}{2}\oint\limits_{(K)}xdy - ydx$
-
-Формула Стокса: $\displaystyle \oint\limits_{(K)} Pdx + Qdy + Rdz = \iint\limits_{(S)}\begin{vmatrix}
-    \cos{\alpha} & \cos{\beta} & \cos{\gamma} \\
-    \frac{\partial}{\partial{x}} & \frac{\partial}{\partial{y}} & \frac{\partial}{\partial{z}} \\
-    P & Q & R \\
-\end{vmatrix}dS =  \iint\limits_{(S)} \operatorname{rot}\vec{F} \vec{dS}$ 
-
-$\displaystyle \frac{\partial{P}}{\partial{y}}=\frac{\partial{Q}}{\partial{x}},~ \frac{\partial{Q}}{\partial{z}}=\frac{\partial{R}}{\partial{y}},~ \frac{\partial{R}}{\partial{x}}=\frac{\partial{P}}{\partial{z}} \Rightarrow \int\limits_{\smile{AB}}Pdx+Qdy+Rdz = u(B) - u(A)$
-
-Формула Гаусса-Остроградского: $\displaystyle \iiint\limits_{(V)} \operatorname{div}\vec{F}dxdydz = \iint\limits_{(S)} \vec{F}\vec{dS} = \iint\limits_{(S)}Pdxdy + Qdzdx + Rdxdy$ 
-
-$\displaystyle V = \iiint\limits_{(T)}dxdydz = \frac{1}{3}\iint\limits_{(S)}xdydz+ydxdz+zdxdy = \frac{1}{3}\iint\limits_{(S)}(x\cos{\alpha} + y\cos{\beta} + z\cos{\gamma})dS$
-
-\vspace{2ex}
-\textit{Поверхностный интеграл}
-
-$\displaystyle J = \iint\limits_{(S)}f(x, y, z)dS = \iint\limits_{(D)}f(x, y, z(x, y))\sqrt{1+(z_x')^2+(z_y')^2}dxdy = \iint\limits_{(\Delta)}f(x(u,v),y(u,v),z(u,v))\sqrt{EG - F^2}dudv$
+$\displaystyle \iint\limits_{(S)}f(x, y, z)dS = \iint\limits_{(D)}f(x, y, z(x, y))\sqrt{1+(z_x')^2+(z_y')^2}dxdy = \iint\limits_{(\Delta)}f(x(u, v), y(u, v), z(u, v))\sqrt{EG - F^2}dudv$
 
 $\displaystyle \vec{\tau_u} = (x_u',y_u',z_u'); ~\vec{\tau_v} = (x_v',y_v',z_v'); ~E = ||\vec{\tau_u}||^2; ~G = ||\vec{\tau_v}||^2; ~F = \vec{\tau_u} \cdot \vec{\tau_v}$
 
+\vspace{1ex}
+\textit{Поверхностный интеграл второго рода}
+
+$\displaystyle \iint\limits_{(S)}\vec{F}d\vec{S} = \iint\limits_{(S)}Pdydz + Qdzdx + Rdxdy = \iint\limits_{(S)}\vec{F}\cdot\vec{n}_0~dS = \iint\limits_{(S)}(P\cos\alpha+\ldots)dS = \pm\iint\limits_{(D)}P(x,y,f(x,y))dxdy+\ldots$
+
+\vspace{1ex}
+\textit{Обобщённая формула Стокса:} 
+$\displaystyle\int\limits_{\partial{S}}w = \int\limits_{S}dw$
+\vspace{-2.5ex}
+\begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item Формула Грина: $\displaystyle\oint\limits_{(K)}P(x, y)dx + Q(x, y)dy = \iint\limits_{(D)}\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)dxdy$
+    \item Формула Стокса: $\displaystyle \oint\limits_{(K)} Pdx + Qdy + Rdz = \iint\limits_{(S)}\begin{vmatrix}
+    \cos{\alpha} & \cos{\beta} & \cos{\gamma} \\
+    \frac{\partial}{\partial{x}} & \frac{\partial}{\partial{y}} & \frac{\partial}{\partial{z}} \\
+    P & Q & R \\
+    \end{vmatrix}dS =  \iint\limits_{(S)} \operatorname{rot}\vec{F} \vec{dS}$ 
+    \item Формула Гаусса-Остроградского: $\displaystyle  \iint\limits_{(S)} \vec{F}\vec{dS} = \iint\limits_{(S)}Pdxdy + Qdzdx + Rdxdy = \iiint\limits_{(V)} \operatorname{div}\vec{F}dxdydz$ 
+\end{itemize}
+
+$\displaystyle V = \iiint\limits_{(T)}dxdydz = \frac{1}{3}\iint\limits_{(S)}xdydz+ydxdz+zdxdy = \frac{1}{3}\iint\limits_{(S)}(x\cos{\alpha} + y\cos{\beta} + z\cos{\gamma})dS$
 
 
 

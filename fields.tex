@@ -1,10 +1,8 @@
 \begin{center}
     \textbf{Поля}
 \end{center}
-
-
-\begin{tabular}{|l|l|l|}
-    $\displaystyle\operatorname{grad}{\vec{\phi}} = \frac{\partial{\phi}}{\partial{x}}\vec{i}+\frac{\partial{\phi}}{\partial{y}}\vec{j}+\frac{\partial{\phi}}{\partial{z}}\vec{k}$
+\begin{tabular}{l|l|l}
+    $\displaystyle\operatorname{grad}{\phi} = \nabla\phi =  \frac{\partial{\phi}}{\partial{x}}\vec{i}+\frac{\partial{\phi}}{\partial{y}}\vec{j}+\frac{\partial{\phi}}{\partial{z}}\vec{k}$
     &
     $\displaystyle \operatorname{div}\vec{a} = (\nabla\cdot\vec{a}) = \cfrac{\partial a_x}{\partial x} + \cfrac{\partial a_y}{\partial y}+\cfrac{\partial a_z}{\partial z}$
     & 
@@ -17,46 +15,38 @@
     \end{vmatrix}$
     \\
     
-    $\displaystyle\nabla=\frac{\partial}{\partial{x}}\vec{i}+\frac{\partial}{\partial{y}}\vec{j}+\frac{\partial}{\partial{z}}\vec{k}$
+    $\displaystyle\nabla{(\phi\cdot\vec{a})} = \phi\cdot\nabla\vec{a}+\nabla\phi\cdot\vec{a}$
     &
     $\displaystyle\operatorname{div}(\phi\cdot\vec{a}) = \phi\cdot\operatorname{div}\vec{a}+\operatorname{grad}{\phi}\cdot\vec{a}$
     & 
     $\displaystyle\operatorname{rot}(\phi\cdot\vec{a}) = \phi\operatorname{rot}\vec{a}+\operatorname{grad}\phi\times\vec{a}$
     \\
     
-    $\displaystyle\operatorname{div}(\operatorname{grad}\phi) = \Laplace\phi = \frac{\partial^2\phi}{\partial{x^2}} + \frac{\partial^2\phi}{\partial{y^2}} + \frac{\partial^2\phi}{\partial{z^2}}$
+    $\displaystyle\nabla{f(u, v)} = \frac{\partial{f}}{\partial{u}}\nabla{u}+\frac{\partial{f}}{\partial{v}}\nabla{v}$
     &
-    $\displaystyle\nabla{(\phi\cdot\vec{a})} = \phi\cdot\nabla\vec{a}+\nabla\phi\cdot\vec{a}$
     &
     $\displaystyle\nabla\times(\phi\vec{a}) = \phi(\nabla\times\vec{a})+\nabla\phi\times\vec{a}$
     \\
     
-    $\displaystyle\operatorname{div}(\operatorname{rot}\vec{a}) = 0$
+     $\displaystyle\operatorname{rot}(\operatorname{grad}\phi) = \vec{0}$
     &
     $\displaystyle\operatorname{div}(\vec{a}\times\vec{b}) = \vec{b}\operatorname{rot}\vec{a}-\vec{a}\operatorname{rot}\vec{b}$
     & 
     $\displaystyle\operatorname{rot}(\operatorname{rot}\vec{a}) = \operatorname{grad}(\operatorname{div}\vec{a}) - \Laplace\vec{a}$
     \\
     
+    $\displaystyle\operatorname{div}(\operatorname{grad}\phi) = \Laplace\phi = \frac{\partial^2\phi}{\partial{x^2}} + \frac{\partial^2\phi}{\partial{y^2}} + \frac{\partial^2\phi}{\partial{z^2}}$
     &
+     $\displaystyle\operatorname{div}(\operatorname{rot}\vec{a}) = 0$
     &
-    $\displaystyle\operatorname{rot}(\operatorname{grad}\phi) = \vec{0}$
     \\
-\end{tabular}
+\end{tabular} 
 
-$\displaystyle\frac{\partial\phi}{\partial{l}} = \frac{\partial\phi}{\partial{x}}\cos{\alpha} + \frac{\partial\phi}{\partial{y}}\cos{\beta} + \frac{\partial\phi}{\partial{z}}\cos{\gamma}$
-
-$\displaystyle\int\limits_{(l)}\vec{a}d\vec{r} = \int\limits_{(l)}a_xdx+a_ydy+z_zdz = \iint\limits_{(S)}(\operatorname{rot}\vec{a}\cdot\vec{n_0})dS$
-
-Потенциал поля: $\displaystyle
-U(x,y,z) = \int_{x_0, y_0, z_0}^{x,y,z} Pdx+Qdy+Rdz =
-\int_{x_0}^{x} P(x,y,z)dx + \int_{y_0}^{y}Q(x_0,y,z)dy +
-\int_{z_0}^{z} R(x_0,y_0,z)dz$
-
-Векторные линии: $\displaystyle (P(x,y,z);Q(x,y,z);R(x,y,z))$ - векторное поле $\Rightarrow $ 2 решения системы \\ 
-$\displaystyle \frac{dx}{P(x,y,z)} = \frac{dy}{Q(x,y,z)} = \frac{dz}{R(x,y,z)}$ задают вект. линии; 
-\\
-\\
+\vspace{1ex}
+Производная по направлению: $\displaystyle\frac{\partial\phi}{\partial{l}} = \frac{\partial\phi}{\partial{x}}\cos{\alpha} + \frac{\partial\phi}{\partial{y}}\cos{\beta} + \frac{\partial\phi}{\partial{z}}\cos{\gamma}$;
+Векторные линии: 
+$\displaystyle \frac{dx}{a_x} = \frac{dy}{a_y} = \frac{dz}{a_z}$
+\\\\
 \begin{tabular}{|l|}
 	\hline
 	\textbf{Нелинейные системы}: $\displaystyle\frac{dx}{P(x,y,z)} = \frac{dy}{Q(x,y,z)} = \frac{dz}{R(x,y,z)}$ \\
@@ -67,8 +57,6 @@ $\displaystyle \frac{dx}{P(x,y,z)} = \frac{dy}{Q(x,y,z)} = \frac{dz}{R(x,y,z)}$ 
 	\textit{Задача}: для $\displaystyle \frac{dx}{P},\frac{dy}{Q},\frac{dz}{R}$ подобрать $k_1,k_2$ и $k_3$, чтобы после комбинаций получить общий знаменатель \\
 	(сокращается) и решить простую диффуру $\Rightarrow$ получим 1 кривую, выразим $\forall$ неизв. из нее \\ 
 	и подставим в исходную систему $\Rightarrow$ получим диффуру из 2-ух оставшихся неизв.(ее решение - 2-ая кривая) \\
-	
-	
 	\hline
 \end{tabular}
 

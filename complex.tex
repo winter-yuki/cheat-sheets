@@ -1,72 +1,84 @@
+\begin{center}
+	\textbf{Комплексный анализ}
+\end{center}
+\vspace{1ex}
+
+$\displaystyle z = x + iy = r(\cos{\phi} + i\sin{\phi}) = re^{i\phi}$;
+$\displaystyle w = f(z) = u(x, y) + iv(x, y) = \rho e^{i\theta}$
+
+\noindent
+Стереографическая проекция
+$\displaystyle x = \cfrac{2R\xi}{2R-\zeta}$;
+$\displaystyle y = \cfrac{2R\eta}{2R-\zeta}$;
+$\displaystyle \xi = \cfrac{4R^2x}{x^2+y^2+4R^2}$;
+$\displaystyle \eta = \cfrac{4R^2y}{x^2+y^2+4R^2}$;
+$\displaystyle \zeta = \cfrac{2R(x^2+y^2)}{x^2+y^2+4R^2}$
+
+\noindent
+Условия Коши-Римана $\displaystyle \exists f'(z) \Leftrightarrow$
+$\displaystyle \cfrac{\partial u}{\partial x} = \cfrac{\partial v}{\partial y}$,
+$\displaystyle \cfrac{\partial u}{\partial y} = -\cfrac{\partial v}{\partial x}$ или
+$\displaystyle \cfrac{\partial v}{\partial \phi} = r\cfrac{\partial u}{\partial r}$,
+$-\displaystyle \cfrac{\partial u}{\partial \phi} = r\cfrac{\partial v}{\partial r}$ или
+$\displaystyle -\rho\cfrac{\partial \theta}{\partial x} = \cfrac{\partial \rho}{\partial y}$,
+$\displaystyle \cfrac{\partial \rho}{\partial x} = \rho \cfrac{\partial \theta}{\partial y}$
+
+$\displaystyle f'=\cfrac{\partial}{\partial x}(u + iv)$,
+$\displaystyle f' = \cfrac{\partial}{\partial y}(v -iu)$
+
+$\displaystyle \sin{z} = \frac{e^{iz} - e^{-iz}}{2i}$
+$\displaystyle \cos{z} = \frac{e^{iz} + e^{-iz}}{2}$
+$\displaystyle \sh{z} = \frac{e^{z} - e^{-z}}{2}$
+$\displaystyle \ch{z} = \frac{e^{z} + e^{-z}}{2}$
+
+$\displaystyle \sin{iz} = i\sh{z} \cos{iz} = \ch{z}
+\tan{iz} = i\tanh{z} \cot{iz} = -i\coth{z}$
+
+% TODO equalities like
+$\displaystyle \sin{z} = \sin{x}\ch{y} + i\cos{x}\sh{y}$
+
+$\displaystyle Ln(z) = ln|z| + iArg(z) = ln|z| + i(\phi + 2\pi k)$
+
+Дробно-линейное преобразование по трем точкам
+$\displaystyle \frac{w-w_1}{w-w_2}\frac{w_3-w_2}{w_3-w_1} =
+\frac{z-z_1}{z-z_2}\frac{z_3-z_2}{z_3-z_1}$
+
+$\displaystyle Arccos(z) = -iLn(z + \sqrt{z^2-1})$ \\
+$\displaystyle Arcsin(z) = -iLn(i(z + \sqrt{z^2 - 1}))$ \\
+$\displaystyle Arctg(z) = \frac{i}{2}Ln\frac{i+z}{i-z} = \frac{1}{2i}Ln\frac{1+iz}{1-iz}$ \\
+$\displaystyle Arcctg(z) = \frac{i}{2}Ln\frac{z-i}{z+i}$ \\
+$\displaystyle Arch(z) = Ln(z+\sqrt{z^2 - 1})$ \\
+$\displaystyle Arsh(z) = Ln(z+\sqrt{z^2 + 1})$ \\
+$\displaystyle Arth(z) = \frac{1}{2}Ln\frac{1+z}{1-z}$ \\
+$\displaystyle Arcth(z) = \frac{1}{2}Ln\frac{z+1}{z-1}$
+
+
+
+
+
+\vspace{10ex}
+
 \begin{tabular}{|cccc|}
-	\multicolumn{4}{c}{Complex analysis} \\
-	\hline 
-	
-	\multicolumn{2}{|c}{$\displaystyle z = x+iy = re^{i\phi}$}  &
-	\multicolumn{2}{c|}{$\displaystyle w = w(z) = u + iv = \rho e^{i\theta}$}  \\
-	\hline
-	
-	$\displaystyle z^n = r^ne^{in\phi}$ &
-	$\displaystyle \overline{z} = x - iy$ &
-	$\displaystyle \overline{z}z = r^2$ &
-	$\displaystyle r = |z|$ \\
-	
-	$\displaystyle \phi = {arg}z$ &
-	$\displaystyle Argz = \phi + 2\pi k$ &
-	$\displaystyle x = Rez$ &
-	$\displaystyle y = Imz$ \\
-	
-	$\displaystyle Ln z = ln r + i(\phi + 2\pi k)$ &	
-	\multicolumn{3}{l|}{$\displaystyle \sqrt[n]{z} = r^{\frac{1}{n}}e^{i\frac{1}{n}(\phi+2\pi k)}$} \\
-	\hline
-	
-	\multicolumn{4}{|c|}{Stereographic projection} \\
-	
-	Sphere: & $\displaystyle \xi^2 + \eta^2+(\zeta - R)^2 = R^2$ &
-	Line: & $\displaystyle \frac{\xi}{x} = \frac{\eta}{y} = \frac{\zeta - 2R}{-2R}$ \\
-	
-	$\displaystyle \xi = \cfrac{4R^2x}{x^2+y^2+4R^2}$ &
-	$\displaystyle \eta = \cfrac{4R^2y}{x^2+y^2+4R^2}$ &
-	\multicolumn{2}{c|}{$\displaystyle \zeta = \cfrac{2R(x^2+y^2)}{x^2+y^2+4R^2}$} \\
-	
-	\multicolumn{2}{|c}{$\displaystyle x = \cfrac{2R\xi}{2R-\zeta}$} &
-	\multicolumn{2}{c|}{$\displaystyle y = \cfrac{2R\eta}{2R-\zeta}$} \\
-	\hline
-	
-	\multicolumn{4}{|c|}{Cauchy-Riemann conditions} \\
-	
-	$\displaystyle \cfrac{\partial u}{\partial x} = \cfrac{\partial v}{\partial y}$ &
-	$\displaystyle \cfrac{\partial u}{\partial y} = -\cfrac{\partial v}{\partial x}$ &
-	$\displaystyle f'=\cfrac{\partial u}{\partial x} + i\cfrac{\partial v}{\partial x}$ &
-	$\displaystyle f' = \cfrac{\partial v}{\partial y} - i\cfrac{\partial u}{\partial y}$ \\
-	\hline
-	
-	\multicolumn{2}{|c}{$\displaystyle \cfrac{\partial v}{\partial \phi} = r\cfrac{\partial u}{\partial r}$} &
-	\multicolumn{2}{c|}{$\displaystyle \cfrac{\partial u}{\partial \phi} = -r \cfrac{\partial v}{\partial r}$} \\
-	\hline
-	
-	\multicolumn{2}{|c}{$\displaystyle -\rho\cfrac{\partial \theta}{\partial x} = \cfrac{\partial \rho}{\partial y}$} &
-	\multicolumn{2}{c|}{$\displaystyle \cfrac{\partial \rho}{\partial x} = \rho \cfrac{\partial \theta}{\partial y}$} \\
-	\hline
-	
+
+
 	\multicolumn{4}{|c|}{Conjugate harmonic functions} \\
 	\multicolumn{2}{|l}{1st way:} &
 	\multicolumn{2}{c|}{$\displaystyle v(x, y) = \int \cfrac{\partial v}{\partial x} dx + \cfrac{\partial v}{\partial y} dy$} \\
-	
+
 	\multicolumn{1}{|l}{2nd way:} &
 	\multicolumn{3}{c|}{
 	$\displaystyle f'(z) = \cfrac{\partial u}{\partial x} -i\cfrac{\partial u}{\partial y} \leadsto
 	f'(x + 0i) \rightarrow f'(z); f'(0 + iy) \rightarrow f'(-iz) \leadsto
 	f(z) = \int f'(z)dz$} \\
 	\hline
-	
+
 	\multicolumn{4}{|c|}{Conformal mapping} \\
-	
+
 	\multicolumn{4}{|l|}{Conformal mapping rule: each circle or line turns into circle or line} \\
-	
+
 	Zhykovsky function &
 	\multicolumn{3}{l|}{$\displaystyle f(z) = \cfrac{1}{2}\left( z + \cfrac{1}{z} \right)$} \\
-	
+
 	$\displaystyle D \rightarrow D', S(D')$ -- ? &
 	$\displaystyle K = |f'(z)|$ &
 	$\displaystyle S_{D'} = \iint_{D}K^2dS$ &

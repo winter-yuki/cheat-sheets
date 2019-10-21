@@ -1,0 +1,82 @@
+\begin{center}
+	\textbf{Комплексный анализ}
+\end{center}
+\vspace{1ex}
+
+$\displaystyle z = x + iy = r(\cos{\phi} + i\sin{\phi}) = re^{i\phi}$;
+$\displaystyle w = f(z) = u(x, y) + iv(x, y) = \rho e^{i\theta}$
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	$\displaystyle f'=\cfrac{\partial}{\partial x}(u + iv)$ &
+	$\displaystyle \sin{z} = \frac{e^{iz} - e^{-iz}}{2i}$ &
+	$\displaystyle \sh{z} = \frac{e^{z} - e^{-z}}{2}$ &
+	$\displaystyle \sin{iz} = i\sh{z}$ &
+	$\displaystyle \tan{iz} = i\tanh{z}$
+	\\
+
+	$\displaystyle f' = \cfrac{\partial}{\partial y}(v -iu)$ &
+	$\displaystyle \cos{z} = \frac{e^{iz} + e^{-iz}}{2}$ &
+	$\displaystyle \ch{z} = \frac{e^{z} + e^{-z}}{2}$ &
+	$\displaystyle \cos{iz} = \ch{z}$ &
+	$\cot{iz} = -i\coth{z}$
+	\\
+	\hline
+\end{tabular}
+\vspace{1ex}
+
+\noindent
+$\displaystyle w = z^\alpha = e^{\alpha Ln(z)} = e^{aln(r) - b(\phi + 2\pi k)}\cdot{e^{i(bln(r)+a\phi+2a\pi k)}}$; \hspace{1em}
+$\displaystyle Ln(z) = ln|z| + iArg(z) = ln|z| + i(\phi + 2\pi k)$
+
+
+\noindent
+Стереографическая проекция
+$\displaystyle x = \cfrac{2R\xi}{2R-\zeta}$;
+$\displaystyle y = \cfrac{2R\eta}{2R-\zeta}$;
+$\displaystyle \xi = \cfrac{4R^2x}{x^2+y^2+4R^2}$;
+$\displaystyle \eta = \cfrac{4R^2y}{x^2+y^2+4R^2}$;
+$\displaystyle \zeta = \cfrac{2R(x^2+y^2)}{x^2+y^2+4R^2}$
+
+\noindent
+Условия Коши-Римана $\displaystyle \exists f'(z) \Leftrightarrow$
+$\displaystyle \cfrac{\partial u}{\partial x} = \cfrac{\partial v}{\partial y}$,
+$\displaystyle \cfrac{\partial u}{\partial y} = -\cfrac{\partial v}{\partial x}$ или
+$\displaystyle \cfrac{\partial v}{\partial \phi} = r\cfrac{\partial u}{\partial r}$,
+$-\displaystyle \cfrac{\partial u}{\partial \phi} = r\cfrac{\partial v}{\partial r}$ или
+$\displaystyle -\rho\cfrac{\partial \theta}{\partial x} = \cfrac{\partial \rho}{\partial y}$,
+$\displaystyle \cfrac{\partial \rho}{\partial x} = \rho \cfrac{\partial \theta}{\partial y}$
+
+\noindent
+Дробно-линейное преобразование по трем точкам
+$\displaystyle \frac{w-w_1}{w-w_2}\frac{w_3-w_2}{w_3-w_1} =
+\frac{z-z_1}{z-z_2}\frac{z_3-z_2}{z_3-z_1}$
+
+\vspace{1ex}
+\noindent
+\begin{tabular}{|c|c|}
+	\hline
+	$\displaystyle Arcsin(z) = -iLn(i(z + \sqrt{z^2 - 1}))$ &
+	$\displaystyle Arctg(z) = \frac{i}{2}Ln\frac{i+z}{i-z} = \frac{1}{2i}Ln\frac{1+iz}{1-iz}$ \\
+
+	$\displaystyle Arccos(z) = -iLn(z + \sqrt{z^2-1})$ &
+	$\displaystyle Arcctg(z) = \frac{i}{2}Ln\frac{z-i}{z+i}$ \\
+
+	\hline
+
+	$\displaystyle Arsh(z) = Ln(z+\sqrt{z^2 + 1})$ &
+	$\displaystyle Arth(z) = \frac{1}{2}Ln\frac{1+z}{1-z}$ \\
+
+	$\displaystyle Arch(z) = Ln(z+\sqrt{z^2 - 1})$ &
+	$\displaystyle Arcth(z) = \frac{1}{2}Ln\frac{z+1}{z-1}$ \\
+	\hline
+\end{tabular}
+
+\noindent
+Гармонические функции
+$\displaystyle \Laplace{u}\equiv =
+\frac{\partial^2u}{\partial x^2} + \frac{\partial^2u}{\partial y^2} = 0$; \vspace{1em}
+$\displaystyle v(x, y) = \int\limits_{(x_0, y_0)}^{(x, y)} \cfrac{\partial v}{\partial x} dx + \cfrac{\partial v}{\partial y} dy + C$
+
+
+

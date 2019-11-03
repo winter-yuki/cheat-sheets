@@ -6,22 +6,49 @@ $A + B = A + \bar{A}B$;
 $\displaystyle \overline{\sum_{i=1}^{n}A_i} = \prod_{i=1}^{n}\bar{A}_i$;
 $\displaystyle \sum_{i=1}^{n}\bar{A}_i = \overline{\prod_{i=1}^{n}A_i}$
 
-Условная вероятность
-$\displaystyle P(B|A) = \frac{P(AB)}{P(A)}$;
-$\displaystyle P\left(\prod_{k=1}^{n}A_k\right) = P(A_1)\cdot P(A_2|A_1)\cdot\ldots\cdot P\left(A_n\left|\right.\prod_{k=1}^{n-1}A_k\right)$
+Попарно несовместны $P(\sum{A_k}) = \sum{P(A_k)}$;
+$P(\sum A_k) = \sum_{k=1}^n (-1)^{k-1}\binom{n}{k}P(\prod_{i=1}^k A_i)$
+
+$P(\prod A_k) = \sum_k P(A_k) - \sum_{k=1}^{n-1}\sum_{i=k+1}^n P(A_k + A_i) +\ldots + (-1)^{n-1}P(\sum_{k=1}^n A_k)$
 
 События независимы в совокупности
 $P(\prod A_k) = \prod{P(A_k)}$;
 $P(\sum{A_k}) = 1-\prod[1-P(A_k)]$
 
-Попарно несовместны $P(\sum{A_k}) = \sum{P(A_k)}$
+Условная вероятность
+$\displaystyle P(B|A) = \frac{P(AB)}{P(A)}$;
+$\displaystyle P\left(\prod_{k=1}^{n}A_k\right) = P(A_1)\cdot P(A_2|A_1)\cdot\ldots\cdot P\left(A_n\left|\right.\prod_{k=1}^{n-1}A_k\right)$
 
 $P(A) = \sum P(H_i)P(A|H_i)$;
 $\displaystyle P(H_k|A) = \frac{P(H_k)P(A|H_k)}{\sum P(H_i)P(A|H_i)}$
 
 Бернулли
 $P^{(n)}_m = \binom{n}{m}p^mq^{n-m}$;
-Пуасона
+Пуассон
 $\displaystyle P_m = \frac{a^m}{m!}e^{-a}$;
 полиномиальный
 $P^{(n)}_{m_1\ldots m_k} = \binom{n}{m_1\ldots m_k}p_1^{m_1}\ldots p_k^{m_k}$
+
+% TODO производящие функции
+
+\begin{center}
+    \textbf{Случайные величины}
+\end{center}
+
+Нормальное распределение
+$\displaystyle f(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\cfrac{(x-a)^2}{2\sigma^2}}$
+
+$\expect{\xi} = \sum x_ip_i$;
+$\displaystyle \expect{\xi} = \int\limits_\Omega\xi(\omega)dP$;
+$\disper{\xi} = \expect{[(\xi - \expect{\xi})^2]}$
+
+$\displaystyle P(\eta = y | \xi = x) = \frac{P(\eta = y, \xi = x)}{P(\xi = x)}$;
+$\displaystyle \expect{[\eta | \xi=x]} = \sum_ly_lP(\eta=y_l|\xi=x_k)$;
+$\expect{[\expect{[\eta|\xi]}]} = \expect{\eta}$
+
+$\displaystyle f_{\eta|\xi} =
+\frac{f_{\xi,\eta}(x,y)}{\int\limits_{-\infty}^{+\infty}f_{\xi,\eta}(x,u)du}$;
+$\displaystyle \expect{[\eta | \xi=x]} =
+\int\limits_{-\infty}^{+\infty}yf_{\eta|\xi}(y|\xi=x)dy$;
+$\displaystyle \disper{[\eta|\xi=x]} =
+\int\limits_{-\infty}^{+\infty}(y-\expect{[\eta|\xi=x]})^2f_{\eta|\xi}(y|x)dy$

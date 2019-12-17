@@ -39,13 +39,17 @@ $\displaystyle \eta = \cfrac{4R^2y}{x^2+y^2+4R^2}$;
 $\displaystyle \zeta = \cfrac{2R(x^2+y^2)}{x^2+y^2+4R^2}$
 
 \noindent
-Условия Коши-Римана $\displaystyle \exists f'(z) \Leftrightarrow$
+КР
 $\displaystyle \cfrac{\partial u}{\partial x} = \cfrac{\partial v}{\partial y}$,
-$\displaystyle \cfrac{\partial u}{\partial y} = -\cfrac{\partial v}{\partial x}$ или
+$\displaystyle \cfrac{\partial u}{\partial y} = -\cfrac{\partial v}{\partial x}$
+или
 $\displaystyle \cfrac{\partial v}{\partial \phi} = r\cfrac{\partial u}{\partial r}$,
 $-\displaystyle \cfrac{\partial u}{\partial \phi} = r\cfrac{\partial v}{\partial r}$ или
 $\displaystyle -\rho\cfrac{\partial \theta}{\partial x} = \cfrac{\partial \rho}{\partial y}$,
 $\displaystyle \cfrac{\partial \rho}{\partial x} = \rho \cfrac{\partial \theta}{\partial y}$
+или
+$\displaystyle \cfrac{\partial\rho}{\partial{r}}=\cfrac{\rho}{r}\cfrac{\partial\theta}{\partial\phi}$,
+$\rho\cfrac{\partial\theta}{\partial{r}} = -\cfrac{\partial\rho}{r\partial\phi}$
 
 \noindent
 Дробно-линейное преобразование по трем точкам
@@ -76,7 +80,11 @@ $\displaystyle \frac{w-w_1}{w-w_2}\frac{w_3-w_2}{w_3-w_1} =
 Гармонические функции
 $\displaystyle \Laplace{u}\equiv =
 \frac{\partial^2u}{\partial x^2} + \frac{\partial^2u}{\partial y^2} = 0$; \vspace{1em}
-$\displaystyle v(x, y) = \int\limits_{(x_0, y_0)}^{(x, y)} \cfrac{\partial v}{\partial x} dx + \cfrac{\partial v}{\partial y} dy + C$
+$\displaystyle v(x, y)
+= \int\limits_{(x_0, y_0)}^{(x, y)} \cfrac{\partial v}{\partial x} dx + \cfrac{\partial v}{\partial y} dy + C
+= \int\limits_{(x_0, y_0)}^{(x, y)} -\cfrac{\partial u}{\partial y} dx + \cfrac{\partial u}{\partial x} dy + C$
+
+$\displaystyle\int\limits_{(C)}f(z)\,dz = \int\limits_{(C)}u(x, y)\,dx - v(x, y)\,dy + i\int\limits_{(C)}v(x, y)\,dx + u(x, y)\,dy = \int\limits_\alpha^\beta f(z(t))z'(t)\,dt$
 
 
 
